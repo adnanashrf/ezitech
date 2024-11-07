@@ -14,7 +14,7 @@ python manage.py createsuperuser
 # Run the development server
 python manage.py runserver
 
-#Screenshots
+# Screenshots
 <img width="947" alt="e1" src="https://github.com/user-attachments/assets/64b6d108-e998-4df3-a096-fd379d9056b4">
 <img width="950" alt="e2" src="https://github.com/user-attachments/assets/9e78f378-b5e8-4b1a-a7bc-626b6a2293d7">
 <img width="947" alt="e3" src="https://github.com/user-attachments/assets/4e130577-0470-473f-9bf6-3f5351405de6">
