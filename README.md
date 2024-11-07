@@ -1,5 +1,5 @@
 # Clone the repository and navigate into the project directory
-git clone https://github.com/yourusername/projectname.git
+git clone https://github.com/adnanashrf/ezitech.git
 cd projectname
 
 # Install Django
