@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block body %}
+<div class="container mt-5 text-light">
+    
+    <h1 class="text-center mb-4">ATTENDANCE MANAGEMENT SYSTEM</h1>
+    <h2 class="text-center mb-4">Request For a Leave!</h2>
+
+    <div class="text-center">
+        <form id="leaveRequestForm" method="post" class="container w-50">
+            {% csrf_token %}
+            
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <div class="form-group">
+                <label for="start_date">Start Date</label>
+                {{ form.start_date }}
+            </div>
+            <div class="form-group mt-3">
+                <label for="end_date">End Date</label>
+                {{ form.end_date }}
+            </div>
+            <div class="form-group mt-3">
+                <label for="reason">Reason of Leave</label>
+                {{ form.reason }}
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4">Submit Leave Request</button>
+            <a href="{% url 'mark_attendance' %}" class="btn btn-secondary mt-4">Back</a>
+        </form>
+    </div>
+</div>
+{% endblock body %}
